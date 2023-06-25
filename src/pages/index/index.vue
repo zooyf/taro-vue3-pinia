@@ -1,6 +1,7 @@
 <template>
   <basic-layout show-tab-bar>
     <custom-nav-bar title="首页" />
+    <nut-cell title="功德簿" @click="handleToMerit"></nut-cell>
     <nut-cell title="基础弹框" @click="baseClick"></nut-cell>
     <nut-cell title="分包A" @click="handleToA"></nut-cell>
     <nut-cell title="分包B" @click="handleToB"></nut-cell>
@@ -23,6 +24,12 @@ const visible1 = ref<boolean>(false);
 
 function baseClick() {
   visible1.value = true;
+}
+
+function handleToMerit() {
+  navigateTo({
+    url: '/package/merit-book/index'
+  });
 }
 
 function handleToA() {

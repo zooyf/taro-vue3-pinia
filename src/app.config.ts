@@ -1,5 +1,5 @@
 export default defineAppConfig({
-  pages: ['pages/index/index', 'pages/my/index'],
+  pages: ['pages/index/index', 'pages/daily_good/index', 'pages/my/index'],
   window: {
     backgroundColor: '#fff',
     backgroundTextStyle: 'light',
@@ -24,8 +24,12 @@ export default defineAppConfig({
         text: '首页'
       },
       {
+        pagePath: 'pages/daily_good/index',
+        text: '行善'
+      },
+      {
         pagePath: 'pages/my/index',
-        text: '个人中心'
+        text: '我的'
       }
     ]
   }

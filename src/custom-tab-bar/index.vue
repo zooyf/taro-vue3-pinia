@@ -25,8 +25,14 @@ const tabBar = {
       icon: 'i-local-wind'
     },
     {
+      // pagePath: '/pages/daily_good/index',
       pagePath: '/pages/my/index',
-      text: '个人中心',
+      text: '行善',
+      icon: 'i-local-custom-icon2'
+    },
+    {
+      pagePath: '/pages/my/index',
+      text: '我的',
       icon: 'i-local-custom-icon'
     }
   ]
